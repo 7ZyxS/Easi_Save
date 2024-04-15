@@ -8,25 +8,18 @@
       d:DesignHeight="450" d:DesignWidth="1000"
       Title="Easy_Save_View">
 
-    <Grid>
+    <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="9*"/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-        </Grid>
-            
-            
+
         <Grid Grid.Row="0" Background="LightGray">
             <RadioButton Margin="0,0,937,15" Content="English"/>
             <RadioButton Margin="0,15,937,0" Content="Français"/>
-            <Button Content="Option" Margin="68,0,828,0"/>
-            <Button Content="Logs" Margin="177,0,719,0"/>
+            <Button Content="Option" Margin="68,0,828,0" Height="20" VerticalAlignment="Center"/>
+            <Button Content="Logs" Margin="177,5,719,5"/>
             <RadioButton Margin="286,0,651,15" Content="json"/>
             <RadioButton Margin="286,15,651,0" Content="xml"/>
         </Grid>
@@ -44,9 +37,23 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        
-        
-        
+
+        <Grid Grid.Row="2">
+            <Label Content="Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Source" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+            <Label Content="Destination" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+            <Label Content="Type" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top"/>
+            <RadioButton Content="Full" HorizontalAlignment="Left" Margin="90,103,0,0" VerticalAlignment="Top"/>
+            <RadioButton Content="differential" HorizontalAlignment="Left" Margin="90,119,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Margin="90,14,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+            <TextBox HorizontalAlignment="Left" Margin="90,45,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+            <TextBox HorizontalAlignment="Left" Margin="90,76,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="220"/>
+            <Button Content="..." HorizontalAlignment="Left" Margin="320,44,0,0" VerticalAlignment="Top" Width="40"/>
+            <Button Content="..." HorizontalAlignment="Left" Margin="320,76,0,0" VerticalAlignment="Top" Width="40"/>
+            <Button Content="Add New Work" HorizontalAlignment="Left" Margin="320,111,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+
     </Grid>
 
 
